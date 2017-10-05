@@ -1,0 +1,7 @@
+<h4 *ngIf="access"><a routerLink="/list">Sie sind berechtigt Daten abzufragen.</a></h4>
+<h4 *ngIf="!access"><a routerLink="/list">Bitte einloggen um den Datenzugriff zu ermöglichen.</a></h4>
+<p>
+  <button (click)="login()">Login</button>
+  <button (click)="logout()">Logout</button>
+</p>
+
